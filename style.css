@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Roboto:wght@100&display=swap');
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Condiment', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-brand:hover {
+    color: #011988;
+}
+
+.nav-link-custom {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.nav-link-custom:hover {
+    color: #011988;
+}
+
+.nav-link-login {
+    border: 1px solid #011988;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-link-login:hover {
+    color: white;
+    background-color: #011988;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.nav-link-register {
+    border: 1px solid #011988;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 0;
+}
+
+.nav-link-register:hover {
+    color: white;
+    background-color: #011988;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.banner-image {
+    background-image: url(https://melodiaenlinea.com/TtNkIeTCeS/wp-content/uploads/2020/08/sala-de-cine.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 991px) {
+    .container-brand {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 2em;
+        padding-top: 0px;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+        border: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .nav-link-custom {
+        margin-right: 0px;
+    }
+
+    .nav-link-login {
+        border: none;
+    }
+
+    .nav-link-register {
+        border: none;
+    }
+}
