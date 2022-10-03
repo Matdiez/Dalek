@@ -105,7 +105,19 @@
         border: none;
     }
 
+    .nav-link-login:hover {
+        color: #011988;
+        background-color: initial;
+        box-shadow: none;
+    }
+
     .nav-link-register {
         border: none;
+    }
+
+    .nav-link-register:hover {
+        color: #011988;
+        background-color: initial;
+        box-shadow: none;
     }
 }
