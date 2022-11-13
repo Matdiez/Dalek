@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #03012C;
-}
-
 /* -- NAVBAR -- */
 
 .navbar {
@@ -80,89 +76,9 @@ body {
     display: none;
 }
 
-/* -- BANNER -- */
-
-.banner-image {
-    background-image: url(https://melodiaenlinea.com/TtNkIeTCeS/wp-content/uploads/2020/08/sala-de-cine.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/* -- FOOTER -- */
-
-.footer {
-    padding: 40px 0;
-}
-
-.social {
-    text-align: center;
-    padding-bottom: 25px;
-    color: white;
-}
-
-.social a {
-    font-size: 1.5rem;
-    color: white;
-    border: 1px solid white;
-    width: 45px;
-    height: 45px;
-    line-height: 42px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 0.8rem;
-    opacity: 0.5;
-}
-
-.social a:hover {
-    opacity: 1;
-}
-
-.footer ul {
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.footer ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    opacity: 0.5;
-}
-
-.footer ul li a:hover {
-    opacity: 1;
-}
-
-.footer ul li {
-    display: inline-block;
-    padding: 0 15px;
-}
-
-.copyright {
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 1rem;
-    color: white;
-}
-
 /* -- MEDIA QUERIES -- */
 
 @media (max-width: 991px) {
-    .container-brand {
-        margin-top: 15px;
-        margin-left: 10px;
-    }
-
-    .navbar-brand {
-        font-size: 2em;
-        padding-top: 0px;
-    }
-
     .navbar-toggler {
         margin-right: 10px;
         border: none;
