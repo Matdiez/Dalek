@@ -82,6 +82,10 @@ body {
 
 /* -- ABOUT US PAGE -- */
 
+.content-about {
+    margin-top: 7rem;
+}
+
 .about-image {
     max-width: 12rem;
     width: 12rem;
@@ -94,13 +98,25 @@ body {
     margin-bottom: 2rem;
 }
 
-.content-about h3 {
+.content-about h4 {
     color: white;
     margin-bottom: 2rem;
 }
 
 .content-about p {
     color: white;
+}
+
+.content-about-text {
+    transition: 1.5s linear;
+}
+
+label {
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 /* -- FOOTER -- */
@@ -167,6 +183,8 @@ body {
 /* -- MEDIA QUERIES -- */
 
 @media (max-width: 991px) {
+
+    /* -- Navbar -- */
     .container-brand {
         margin-top: 15px;
         margin-left: 10px;
@@ -215,5 +233,45 @@ body {
         color: #011988;
         background-color: initial;
         box-shadow: none;
+    }
+
+    /** -- Show more button **/
+    .content-about-text {
+        display: none;
+        transition: 0.5s linear;
+    }
+    
+    label {
+        cursor: pointer;
+        font-size: 1.1rem;
+        position: relative;
+        display: inline-block;
+        padding: 10px 25px;
+        background: #ff0562;
+        color: white;
+        border-radius: 50px;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    #check:checked ~ .content-about-text {
+        display: block;
+    }
+    
+    #check:checked ~ label {
+        visibility: hidden;
+    }
+    
+    #check:checked ~ label:after {
+        content: 'Show less';
+        display: block;
+        visibility: visible;
+        position: relative;
+        padding: 10px 25px;
+        background: #ff0562;
+        color: white;
+        border-radius: 25px;
     }
 }
