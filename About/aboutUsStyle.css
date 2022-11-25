@@ -6,8 +6,15 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #03012C;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /* -- NAVBAR -- */
@@ -121,8 +128,13 @@ label {
 
 /* -- FOOTER -- */
 
+footer {
+    margin-top: auto;
+}
+
 .footer {
     padding: 40px 0;
+
 }
 
 .social {
