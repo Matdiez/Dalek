@@ -87,10 +87,173 @@ body {
     display: none;
 }
 
-/* -- ABOUT US PAGE -- */
+/* -- ABOUT PAGE -- */
 
+.content-faq-services {
+    margin-top: 6rem;
+}
+
+.content-faq-services h1 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.content-faq-services h6 {
+    color: white;
+}
+
+/* -- FAQ section -- */
+.faq-content {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.icon-head {
+    color: #ff0562;
+}
+
+.faq-accordion label{
+    display: block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.faq-accordion label:hover {
+    background: linear-gradient(135deg, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.faq-accordion .fa-minus {
+    display: none;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 250ms ease;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.btn-accordion:checked ~ .faq-answer {
+    padding: 1rem 1rem 0rem 1rem;
+    max-height: 600px;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -.5rem;
+}
+
+.btn-accordion {
+    display: none;
+}
+
+.btn-accordion:checked ~ label .fa-plus {
+    display: none;
+}
+
+.btn-accordion:checked ~ label .fa-minus {
+    display: block;
+}
+
+.faq-answer::before {
+    content: "";
+    position: absolute;
+    width: .5rem;
+    height: 80%;
+    background-color: #ff0562;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* -- Services section -- */
+.service-content {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.service-content p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.service-subTitlte {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.service-content h5 {
+    color: white;
+    margin-bottom: 0px;
+    padding-left: 1rem;
+}
+
+.service-content h5:hover {
+    color: #ff0562;
+    cursor: pointer;
+}
+
+.icon-item {
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    outline: 1px dashed #ff0562;
+    outline-offset: 2px;
+    cursor: pointer;
+}
+
+.icon-item:hover {
+    background: #ff0562;
+}
+
+.service-content p {
+    color: white;
+}
+
+/* -- Banner section -- */
+.banner-content {
+    margin-top: 3rem;
+    padding: 3rem;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://wallpapercave.com/wp/wp5556216.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-icons {
+    font-size: 5rem;
+}
+
+/* -- About me section -- */
 .content-about {
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 
 .about-image {
@@ -118,7 +281,7 @@ body {
     transition: 1.5s linear;
 }
 
-label {
+.btn-show {
     display: none;
 }
 
@@ -247,13 +410,18 @@ footer {
         box-shadow: none;
     }
 
+    /** -- Services section -- **/
+    .service-content {
+        margin-top: 3rem;
+    }
+
     /** -- Show more button **/
     .content-about-text {
         display: none;
         transition: 0.5s linear;
     }
     
-    label {
+    .btn-show{
         cursor: pointer;
         font-size: 1.1rem;
         position: relative;
@@ -281,9 +449,45 @@ footer {
         display: block;
         visibility: visible;
         position: relative;
-        padding: 10px 25px;
+        font-size: 1.1rem;
+        padding: 10.5px 25px;
         background: #ff0562;
         color: white;
         border-radius: 25px;
+        font-size: 1.1rem;
+        margin-top: -36.5px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .service-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 539px) {
+    .faq-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .service-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .banner-content h1 {
+        display: none;
+    }
+
+    .banner-icons {
+        font-size: 3rem;
     }
 }
