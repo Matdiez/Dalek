@@ -85,7 +85,7 @@
                     </label>
                     <div class="faq-answer">
                         <p>
-                            Enjoy your favourite shows for only $4.99 a month and $49.99 a year.
+                            Enjoy your favourite shows for only $4.99 a month and $49.99 a year or $7.99 monthly or $69.99 annually for the PREMIUM pack.
                         </p>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
     <!-- Banner section -->
     <div class="banner-content container-fluid justify-content-center align-items-center text-center">
         <div class="banner-items">
-            <h1>Aviable on:</h1>
+            <h1>Available on:</h1>
             <i class="fa-brands fa-google-play banner-icons"></i>
             <i class="fa-brands fa-apple banner-icons"></i>
             <i class="fa-brands fa-windows banner-icons"></i>
@@ -157,8 +157,8 @@
     <!-- About Me section -->
     <div class="container d-flex justify-content-center align-items-center text-center">
         <div class="content-about col-md-12 col-lg-6">
-            <h1>MARCOS TARIFA</h1>
-            <img src="./src/img/IMG_20180223_230722_729m.jpg" class="about-image" alt="my photo">
+            <h1>I'm <span class="auto-type"></span></h1>
+            <img src="./src/img/about-me-image.jpg" class="about-image" alt="my photo">
             <h4>Full Stack Developer</h4>
             <input type="checkbox" id="check">
             <label for="check" class="btn-show">Show more</label>
@@ -205,10 +205,22 @@
         <p class="copyright">Marcos Tarifa © 2022</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        const typed = new Typed(".auto-type", {
+            strings: ["Marcos Tarifa"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
