@@ -335,3 +335,9 @@ footer {
         padding: 1rem;
     }
 }
+
+@media  screen and (min-width: 1000px) {
+    .container-contact {
+        margin-top: 15rem;
+    }
+}
