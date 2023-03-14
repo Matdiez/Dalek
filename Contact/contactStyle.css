@@ -336,8 +336,20 @@ footer {
     }
 }
 
-@media  screen and (min-width: 1000px) {
+@media screen and (min-height: 1000px) {
     .container-contact {
         margin-top: 15rem;
+    }
+}
+
+@media screen and (min-height: 900px) {
+    .container-contact {
+        margin-top: 9rem;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    .container-contact {
+        margin-top: 13rem;
     }
 }
