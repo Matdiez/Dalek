@@ -64,10 +64,10 @@
             <div class="right-box">
                 <h2>Contact Us</h2>
                 <form id="form">
-                    <input type="name" name="from_name" class="field" id="from_name" placeholder="Name" required>
+                    <input type="name" name="from_name" class="field" id="from_name" placeholder="Name" pattern="[a-z A-Z]+" minlength="3" maxlength="30" required>
                     <input type="email" name="email_id" class="field" id="email_id" placeholder="E-mail" required>
-                    <input type="text" name="subject" class="field" id="subject" placeholder="Subject" required>
-                    <textarea name="message" class="field message-area" id="message" placeholder="Message" required></textarea>
+                    <input type="text" name="subject" class="field" id="subject" placeholder="Subject" pattern="[a-z A-Z]+" minlength="3" maxlength="20" required>
+                    <textarea name="message" class="field message-area" id="message" placeholder="Message" maxlength="250" required></textarea>
                     <button type="submit" class="btn-send" id="button">Submit</button>
                 </form>
             </div>
