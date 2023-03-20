@@ -80,6 +80,22 @@ body {
     display: none;
 }
 
+/* -- Modal -- */
+
+.modal-dialog-centered {
+    justify-content: center;
+}
+
+.modal-login {
+    width: 25rem;
+    height: 27.5rem;
+    background: transparent;
+    border: 1px solid white;
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+
 /* -- BANNER -- */
 
 .banner-image {
