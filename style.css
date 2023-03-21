@@ -80,8 +80,7 @@ body {
     display: none;
 }
 
-/* -- Modal -- */
-/* -- Login -- */
+/* -- Modal Login -- */
 
 .modal-dialog-centered {
     justify-content: center;
@@ -246,7 +245,8 @@ body {
     color: white;
 }
 
-/* -- Register -- */
+/* -- Modal Register -- */
+
 .modal-register {
     width: 25rem;
     height: 32.5rem;
