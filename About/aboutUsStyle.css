@@ -547,6 +547,28 @@ footer {
 
 /* -- MEDIA QUERIES -- */
 
+@media (min-width: 1400px) {
+    .content-faq-services {
+        padding: 10rem 10rem 6rem 10rem;
+    }
+
+    .faq-content h1 {
+        padding-bottom: 2rem;
+    }
+
+    .faq-accordion {
+        margin-bottom: 2.5rem;
+    }
+
+    .service-content p {
+        margin-bottom: 2.5rem;
+    }
+
+    .content-about-text {
+        margin-bottom: 5rem;
+    }
+}
+
 @media (max-width: 991px) {
 
     /* -- Navbar -- */
