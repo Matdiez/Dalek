@@ -300,20 +300,24 @@ body {
     justify-content: center;
 }
 
-.container-trending {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+#trending {
+    color: white;
 }
 
-.trending-card {
-    width: 16em;
-    height: 12em;
-    margin: 0 20px;
-    border: 1px solid red;
+#trending img {
+    border-radius: 6px;
+    margin-bottom: 1em;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-.trending-img img {
-    width: 100%;
+.item {
+    margin: 0 10px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #ff0562;
 }
 
 /* -- FOOTER -- */
@@ -435,4 +439,3 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
