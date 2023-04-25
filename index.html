@@ -148,30 +148,18 @@
                 <img src="./src/img/slide-1.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption c-inside">
                     <img src="./src/img/slide-logo-1.png" alt="">
-                    
-                    <!--<p class="mb-4">In his second year of fighting crime, Batman uncovers corruption in Gotham City that
-                        connects to
-                        his own family while facing a serial killer known as the Riddler.</p>-->
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./src/img/slide-2.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption c-inside">
                     <img src="./src/img/slide-logo-2.png" alt="">
-                    <!--<p class="mb-4">Puss in Boots discovers that his passion for adventure has taken its toll: He has
-                        burned through
-                        eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey
-                        to find the mythical Last Wish and restore his nine lives.</p>-->
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./src/img/slide-3.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption c-inside">
                     <img src="./src/img/slide-logo-3.png" alt="">
-                    <!--<p class="mb-4">With the price on his head ever increasing, John Wick uncovers a path to defeating
-                        The High
-                        Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful
-                        alliances across the globe and forces that turn old friends into foes.</p>-->
                 </div>
             </div>
         </div>
@@ -190,39 +178,33 @@
     <!-- BODY -->
     <div id="trending" class="container-fluid d-flex trending-section">
         <div class="trending-header">
-            <h1>TRENDING</h1>
+            <h1>POPULAR</h1>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="owl-carousel owl-theme" id="movie-carousel"></div>
+                <div class="owl-carousel owl-theme" id="movie-carousel-popular"></div>
             </div>
         </div>
     </div>
-    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
-        <div class="content text-center">
-            <h1 class="text-white">MOVIE EXAMPLE</h1>
-        </div>
-    </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas itaque ipsa non minima minus quas
-            similique, dicta eveniet magnam iusto rerum autem tempore repellat reiciendis nulla ex provident corporis
-            omnis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas itaque ipsa non minima minus quas
-            similique, dicta eveniet magnam iusto rerum autem tempore repellat reiciendis nulla ex provident corporis
-            omnis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas itaque ipsa non minima minus quas
-            similique, dicta eveniet magnam iusto rerum autem tempore repellat reiciendis nulla ex provident corporis
-            omnis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas itaque ipsa non minima minus quas
-            similique, dicta eveniet magnam iusto rerum autem tempore repellat reiciendis nulla ex provident corporis
-            omnis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas itaque ipsa non minima minus quas
-            similique, dicta eveniet magnam iusto rerum autem tempore repellat reiciendis nulla ex provident corporis
-            omnis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas itaque ipsa non minima minus quas
-            similique, dicta eveniet magnam iusto rerum autem tempore repellat reiciendis nulla ex provident corporis
-            omnis!</p>
-    </div>
+
+    <section id="movie-box">
+        <article class="left">
+            <div id="top-rated" class="container-fluid d-flex top-rated-section">
+                <h1>Top Rated</h1>
+                <div class="container-fluid">
+                    <div>
+                        <div class="row">
+                            <div class="owl-carousel owl-theme" id="movie-carousel-top"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="right"></article>
+    </section>
+
+    <!-- SEPARATOR -->
+    <div class="vh-100"></div>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -263,7 +245,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>
