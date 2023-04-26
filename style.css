@@ -324,7 +324,11 @@ body {
 
 /* -- TRENDING SECTION -- */
 
-.trending-section, .top-rated-section, .drama-section, .action-section, .horror-section {
+.trending-section,
+.top-rated-section,
+.drama-section,
+.action-section,
+.horror-section {
     flex-direction: column;
     align-items: center;
 }
@@ -337,11 +341,19 @@ body {
     justify-content: center;
 }
 
-#trending, #top-rated,#drama, #action, #horror {
+#trending,
+#top-rated,
+#drama,
+#action,
+#horror {
     color: white;
 }
 
-#trending img, #top-rated img, #drama img, #action img, #horror img {
+#trending img,
+#top-rated img,
+#drama img,
+#action img,
+#horror img {
     border-radius: 6px;
     margin-bottom: 1em;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);

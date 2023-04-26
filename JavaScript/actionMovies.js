@@ -1,8 +1,8 @@
 import { API_KEY } from './api.js'
 
-export const loadDramaMovies = async () => {
+export const loadActionMovies = async () => {
     try {
-        const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=18`)
+        const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=28`)
         const data = await res.json()
         let movies = ''
         data.results.slice(0, 12).forEach(movie => {
@@ -21,9 +21,9 @@ export const loadDramaMovies = async () => {
             `
         })
 
-        document.getElementById('movie-carousel-drama').innerHTML = movies
+        document.getElementById('movie-carousel-action').innerHTML = movies
 
-        $('#movie-carousel-drama').owlCarousel({
+        $('#movie-carousel-action').owlCarousel({
             loop: true,
             margin: 10,
             responsiveClass: true,
