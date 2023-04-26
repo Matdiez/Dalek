@@ -324,8 +324,8 @@ body {
 
 /* -- TRENDING SECTION -- */
 
-.trending-section,
-.top-rated-section,
+.upcoming-section,
+.action-section,
 .drama-section,
 .suspense-section,
 .animation-section {
@@ -333,7 +333,7 @@ body {
     align-items: center;
 }
 
-.trending-header {
+.upcoming-header {
     height: 15vh;
     color: white;
     display: flex;
@@ -341,16 +341,16 @@ body {
     justify-content: center;
 }
 
-#trending,
-#top-rated,
+#upcoming,
+#action,
 #drama,
 #suspense,
 #animation {
     color: white;
 }
 
-#trending img,
-#top-rated img,
+#upcoming img,
+#action img,
 #drama img,
 #suspense img,
 #animation img {
