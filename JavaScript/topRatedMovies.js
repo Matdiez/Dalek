@@ -12,10 +12,10 @@ export const loadTopRatedMovies = async () => {
                         <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="img">
                     </a>
                         <div class="container body-card">
-                        <h5>${movie.title}</h5>
+                        <h5><i class="fa-solid fa-star" style="color: yellow;"></i> ${movie.title}</h5>
                         <div class="info-card">
-                            <p>Rated: 10/${movie.vote_average}</p>
-                            <p>Year: ${movie.release_date.split('-')[0]}</p>
+                            <p>Rated <i class="fa-solid fa-angle-right" style="color: #ff0562;"></i> <span>10/${movie.vote_average}</span></p>
+                            <p>Year <i class="fa-solid fa-angle-right" style="color: #ff0562;"></i> <span>${movie.release_date.split('-')[0]}</span></p>
                         </div>
                     </div>
                 </div>
