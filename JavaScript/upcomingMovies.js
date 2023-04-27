@@ -12,7 +12,7 @@ export const loadUpcomingMovies = async () => {
                         <a href="./Detail/detailPage.html?id=${movie.id}">
                             <img src="https://image.tmdb.org/t/p/w500/${movie.backdrop_path}" alt="img" class="card-img-top">
                         </a>    
-                        <h4 class="text-center">${movie.title}</h4>
+                        <h5 class="text-center">${movie.title}</h5>
                     </div>
                 </div>
             `

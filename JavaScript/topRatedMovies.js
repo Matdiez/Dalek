@@ -8,12 +8,14 @@ export const loadTopRatedMovies = async () => {
         data.results.splice(0, 8).forEach(movie => {
             movies += `
                 <div class="top-card">
-                    <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="img">
-                    <div class="body-card">
+                    <a href="./Detail/detailPage.html?id=${movie.id}">
+                        <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="img">
+                    </a>
+                        <div class="container body-card">
                         <h5>${movie.title}</h5>
                         <div class="info-card">
-                            <p>10/${movie.vote_average}</p>
-                            <p>${movie.release_date.split('-')[0]}</p>
+                            <p>Rated: 10/${movie.vote_average}</p>
+                            <p>Year: ${movie.release_date.split('-')[0]}</p>
                         </div>
                     </div>
                 </div>
