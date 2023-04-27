@@ -12,9 +12,7 @@ export const loadAnimationMovies = async () => {
                         <a href="./Detail/detailPage.html?id=${movie.id}">
                             <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="img" class="card-img-top">
                         </a>    
-                        <div class="card-body text-center">
-                            <h4>${movie.title}</h4>
-                        </div>
+                        <p class="text-center">${movie.title}</p>
                     </div>
                 </div>
             `
