@@ -34,6 +34,29 @@ body {
     color: #011988;
 }
 
+/* SEARCH BAR */
+
+.search {
+    padding: 5px 20px;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 50px;
+    color: white;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .search {
+        width: 100%;
+    }
+}
+
+/* NAV LINKS */
+
 .nav-link-custom {
     color: white;
     text-decoration: none;
@@ -260,19 +283,36 @@ body {
 }
 
 .c-inside img {
-    height: 30%;
+    height: 40%;
     object-fit: cover;
 }
 
-@media only screen and (max-width: 600px) {
-    .c-inside img {
-        height: 14.5%;
-    }
+.div-img {
+    display: none;
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 950px) {
     .c-inside img {
-        height: 11%;
+        display: none;
+    }
+
+    .div-img {
+        display: block;
+        height: 100vh;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-img img {
+        height: 50%;
+        object-fit: cover;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     }
 }
 
@@ -335,6 +375,10 @@ body {
 
 .item {
     margin: 0 10px;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0px
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
@@ -413,7 +457,7 @@ body {
     color: white;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
     #movie-box {
         flex-direction: column;
     }
@@ -425,15 +469,13 @@ body {
     }
 }
 
-@media only screen and (max-width: 950px) {
-    #movie-box {
-        flex-direction: column;
-    }
+.div-responsive {
+    display: none;
+}
 
-    .left,
-    .right {
-        flex-basis: 100%;
-        width: 100%;
+@media only screen and (max-width: 950px) {
+    .div-responsive {
+        display: block;
     }
 }
 

@@ -41,6 +41,29 @@ body {
     color: #011988;
 }
 
+/* SEARCH BAR */
+
+.search {
+    padding: 5px 20px;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 50px;
+    color: white;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .search {
+        width: 100%;
+    }
+}
+
+/* NAV LINKS */
+
 .nav-link-custom {
     color: white;
     text-decoration: none;
