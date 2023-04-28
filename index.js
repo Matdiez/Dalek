@@ -1,9 +1,9 @@
-import { loadUpcomingMovies } from './JavaScript/upcomingMovies.js'
-import { loadActionMovies } from './JavaScript/actionMovies.js'
-import { loadDramaMovies } from './JavaScript/dramaMovies.js'
-import { loadSuspenseMovies } from './JavaScript/suspenseMovies.js'
-import { loadAnimationMovies } from './JavaScript/animationMovies.js'
-import { loadTopRatedMovies } from './JavaScript/topRatedMovies.js'
+import { loadUpcomingMovies } from './JavaScript/getUpcomingMovies.js'
+import { loadActionMovies } from './JavaScript/getActionMovies.js'
+import { loadDramaMovies } from './JavaScript/getDramaMovies.js'
+import { loadSuspenseMovies } from './JavaScript/getSuspenseMovies.js'
+import { loadAnimationMovies } from './JavaScript/getAnimationMovies.js'
+import { loadTopRatedMovies } from './JavaScript/getTopRatedMovies.js'
 
 loadUpcomingMovies()
 loadActionMovies()
