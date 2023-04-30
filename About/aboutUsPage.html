@@ -30,8 +30,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <input type="text" class="search" id="search" placeholder="Search">
+                        <li class="nav-item" id="search-li">
+                            <input type="text" class="search" id="search" placeholder="Search"><button
+                            class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </li>
                     </ul>
                     <div class="mx-auto"></div>
@@ -56,12 +57,14 @@
     </header>
 
     <!-- Modal Login/Register -->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-login">
                 <div class="modal-body form-box form-login">
                     <form action="#">
-                        <span class="icon-close"><i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal" aria-label="Close"></i></span>
+                        <span class="icon-close"><i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal"
+                                aria-label="Close"></i></span>
                         <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
                         <div class="input-box">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
@@ -79,19 +82,22 @@
                         </div>
                         <button type="submit" class="btn-login">Login</button>
                         <div class="login-register">
-                            <p>Don't have an account? <a href="#" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Register</a></p>
+                            <p>Don't have an account? <a href="#" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Register</a></p>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-register">
                 <div class="modal-body form-box form-register">
                     <form action="#">
-                        <span class="icon-close"><i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal" aria-label="Close"></i></span>
+                        <span class="icon-close"><i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal"
+                                aria-label="Close"></i></span>
                         <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Registration</h1>
                         <div class="input-box">
                             <span class="icon"><i class="fa-solid fa-user"></i></span>
@@ -113,7 +119,8 @@
                         </div>
                         <button type="submit" class="btn-login">Register</button>
                         <div class="login-register">
-                            <p>Already have an account? <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Login</a></p>
+                            <p>Already have an account? <a href="#" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Login</a></p>
                         </div>
                     </form>
                 </div>
@@ -121,127 +128,133 @@
         </div>
     </div>
 
-    <!-- ABOUT US PAGE -->
-    <div class="content-faq-services container-fluid d-flex justify-content-center align-items-center">
-        <section class="row">
-            <!-- FAQ section -->
-            <article class="faq-content col-sm-12 col-lg-6">
-                <h6><i class="fa-solid fa-minus icon-head"></i> FAQ <i class="fa-solid fa-minus icon-head"></i></h6>
-                <h1>Wanna know?</h1>
-                <div class="faq-accordion">
-                    <input type="radio" name="accordion" id="faq-question-1" class="btn-accordion" checked>
-                    <label for="faq-question-1" class="faq-label">
-                        What is Dalek?
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-minus"></i>
-                    </label>
-                    <div class="faq-answer">
-                        <p>
-                            Dalek is a susbscription-based streaming service that allows our members to watch show
-                            and
-                            movies on an internet-connected device.
-                        </p>
+    <main id="main">
+        <!-- ABOUT US PAGE -->
+        <div class="content-faq-services container-fluid d-flex justify-content-center align-items-center">
+            <section class="row">
+                <!-- FAQ section -->
+                <article class="faq-content col-sm-12 col-lg-6">
+                    <h6><i class="fa-solid fa-minus icon-head"></i> FAQ <i class="fa-solid fa-minus icon-head"></i></h6>
+                    <h1>Wanna know?</h1>
+                    <div class="faq-accordion">
+                        <input type="radio" name="accordion" id="faq-question-1" class="btn-accordion" checked>
+                        <label for="faq-question-1" class="faq-label">
+                            What is Dalek?
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-minus"></i>
+                        </label>
+                        <div class="faq-answer">
+                            <p>
+                                Dalek is a susbscription-based streaming service that allows our members to watch show
+                                and
+                                movies on an internet-connected device.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq-accordion">
-                    <input type="radio" name="accordion" id="faq-question-2" class="btn-accordion">
-                    <label for="faq-question-2" class="faq-label">
-                        How much does Dalek cost?
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-minus"></i>
-                    </label>
-                    <div class="faq-answer">
-                        <p>
-                            Enjoy your favourite shows for only $4.99 a month and $49.99 a year or $7.99 monthly or $69.99 annually for the PREMIUM pack.
-                        </p>
+                    <div class="faq-accordion">
+                        <input type="radio" name="accordion" id="faq-question-2" class="btn-accordion">
+                        <label for="faq-question-2" class="faq-label">
+                            How much does Dalek cost?
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-minus"></i>
+                        </label>
+                        <div class="faq-answer">
+                            <p>
+                                Enjoy your favourite shows for only $4.99 a month and $49.99 a year or $7.99 monthly or
+                                $69.99 annually for the PREMIUM pack.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq-accordion">
-                    <input type="radio" name="accordion" id="faq-question-3" class="btn-accordion">
-                    <label for="faq-question-3" class="faq-label">
-                        Where can I watch Dalek?
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-minus"></i>
-                    </label>
-                    <div class="faq-answer">
-                        <p>
-                            Enjoy it on Streaming Media Players, Smart TVs, Game Consoles, Set-Top Boxes, Blu-Ray
-                            players, Smartphones, Tablets, PCs and Laptops.
-                        </p>
+                    <div class="faq-accordion">
+                        <input type="radio" name="accordion" id="faq-question-3" class="btn-accordion">
+                        <label for="faq-question-3" class="faq-label">
+                            Where can I watch Dalek?
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-minus"></i>
+                        </label>
+                        <div class="faq-answer">
+                            <p>
+                                Enjoy it on Streaming Media Players, Smart TVs, Game Consoles, Set-Top Boxes, Blu-Ray
+                                players, Smartphones, Tablets, PCs and Laptops.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq-accordion">
-                    <input type="radio" name="accordion" id="faq-question-4" class="btn-accordion">
-                    <label for="faq-question-4" class="faq-label">
-                        How do I cancel?
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-minus"></i>
-                    </label>
-                    <div class="faq-answer">
-                        <p>
-                            Log in to your Dalek account and search for the option on the Settings menu, we are
-                            flexible
-                            and we'll don't charge you any extra fee.
-                        </p>
+                    <div class="faq-accordion">
+                        <input type="radio" name="accordion" id="faq-question-4" class="btn-accordion">
+                        <label for="faq-question-4" class="faq-label">
+                            How do I cancel?
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-minus"></i>
+                        </label>
+                        <div class="faq-answer">
+                            <p>
+                                Log in to your Dalek account and search for the option on the Settings menu, we are
+                                flexible
+                                and we'll don't charge you any extra fee.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <!-- Service section -->
-            <article class="service-content col-sm-12 col-lg-6">
-                <h6><i class="fa-solid fa-minus icon-head"></i> OUR SERVICES <i class="fa-solid fa-minus icon-head"></i>
-                </h6>
-                <h1>Watch your favourites movies and shows.</h1>
-                <p>In this page with our services you can watch any movie or show from our extense library in 4K
-                    resolution FOR ONLY $4.99 a month.
-                </p>
-                <div class="service-subTitlte">
-                    <i class="fa-solid fa-video icon-item"></i>
-                    <h5>ENJOY EVERYWAY</h5>
-                </div>
-                <p>Our website it's compatible with multiple devices.</p>
-                <div class="service-subTitlte">
-                    <i class="fa-solid fa-user icon-item"></i>
-                    <h5>FOR EVERYONE</h5>
-                </div>
-                <p>Share your password with your friends.</p>
-                <div class="service-subTitlte">
-                    <i class="fa-solid fa-download icon-item"></i>
-                    <h5>AND EVERYWHERE</h5>
-                </div>
-                <p>Download any movie or show in the highest definition.</p>
-            </article>
-        </section>
-    </div>
-    <!-- Banner section -->
-    <div class="banner-content container-fluid justify-content-center align-items-center text-center">
-        <div class="banner-items">
-            <h1>Available on:</h1>
-            <i class="fa-brands fa-google-play banner-icons"></i>
-            <i class="fa-brands fa-apple banner-icons"></i>
-            <i class="fa-brands fa-windows banner-icons"></i>
+                </article>
+                <!-- Service section -->
+                <article class="service-content col-sm-12 col-lg-6">
+                    <h6><i class="fa-solid fa-minus icon-head"></i> OUR SERVICES <i
+                            class="fa-solid fa-minus icon-head"></i>
+                    </h6>
+                    <h1>Watch your favourites movies and shows.</h1>
+                    <p>In this page with our services you can watch any movie or show from our extense library in 4K
+                        resolution FOR ONLY $4.99 a month.
+                    </p>
+                    <div class="service-subTitlte">
+                        <i class="fa-solid fa-video icon-item"></i>
+                        <h5>ENJOY EVERYWAY</h5>
+                    </div>
+                    <p>Our website it's compatible with multiple devices.</p>
+                    <div class="service-subTitlte">
+                        <i class="fa-solid fa-user icon-item"></i>
+                        <h5>FOR EVERYONE</h5>
+                    </div>
+                    <p>Share your password with your friends.</p>
+                    <div class="service-subTitlte">
+                        <i class="fa-solid fa-download icon-item"></i>
+                        <h5>AND EVERYWHERE</h5>
+                    </div>
+                    <p>Download any movie or show in the highest definition.</p>
+                </article>
+            </section>
         </div>
-    </div>
-    <!-- About Me section -->
-    <div class="container d-flex justify-content-center align-items-center text-center">
-        <div class="content-about col-md-12 col-lg-6">
-            <h1>I'm <span class="auto-type"></span></h1>
-            <img src="./src/img/about-me-image.jpg" class="about-image" alt="my photo">
-            <h4>Full Stack Developer</h4>
-            <input type="checkbox" id="check">
-            <label for="check" class="btn-show">Show more</label>
-            <div class="content-about-text">
-                <p>
-                    This is a project where I try to emulate a movie/series site similar to Netflix, Disney+, etc. My
-                    goal
-                    with
-                    this page is to demostrate my skills in HTML, CSS and JavaScript to my future clients or anyone who
-                    is
-                    interested
-                    in my knowledge of those languages that I cited before.
-                </p>
+        <!-- Banner section -->
+        <div class="banner-content container-fluid justify-content-center align-items-center text-center">
+            <div class="banner-items">
+                <h1>Available on:</h1>
+                <i class="fa-brands fa-google-play banner-icons"></i>
+                <i class="fa-brands fa-apple banner-icons"></i>
+                <i class="fa-brands fa-windows banner-icons"></i>
             </div>
         </div>
-    </div>
+        <!-- About Me section -->
+        <div class="container d-flex justify-content-center align-items-center text-center">
+            <div class="content-about col-md-12 col-lg-6">
+                <h1>I'm <span class="auto-type"></span></h1>
+                <img src="./src/img/about-me-image.jpg" class="about-image" alt="my photo">
+                <h4>Full Stack Developer</h4>
+                <input type="checkbox" id="check">
+                <label for="check" class="btn-show">Show more</label>
+                <div class="content-about-text">
+                    <p>
+                        This is a project where I try to emulate a movie/series site similar to Netflix, Disney+, etc.
+                        My
+                        goal
+                        with
+                        this page is to demostrate my skills in HTML, CSS and JavaScript to my future clients or anyone
+                        who
+                        is
+                        interested
+                        in my knowledge of those languages that I cited before.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -285,9 +298,8 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

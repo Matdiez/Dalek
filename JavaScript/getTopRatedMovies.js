@@ -14,7 +14,7 @@ export const loadTopRatedMovies = async () => {
                         <div class="container body-card">
                         <h5><i class="fa-solid fa-star" style="color: yellow;"></i> ${movie.title}</h5>
                         <div class="info-card">
-                            <p>Rated <i class="fa-solid fa-angle-right" style="color: #ff0562;"></i> <span>10/${movie.vote_average}</span></p>
+                            <p>Rated <i class="fa-solid fa-angle-right" style="color: #ff0562;"></i> <span>${movie.vote_average}/10</span></p>
                             <p>Year <i class="fa-solid fa-angle-right" style="color: #ff0562;"></i> <span>${movie.release_date.split('-')[0]}</span></p>
                         </div>
                     </div>

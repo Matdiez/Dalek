@@ -47,8 +47,9 @@ body {
     padding: 5px 20px;
     background: none;
     border: 1px solid gray;
-    border-radius: 50px;
     color: white;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 }
 
 textarea:focus,
@@ -56,9 +57,18 @@ input:focus {
     outline: none;
 }
 
+.search-btn {
+    padding: 5px 12px 5px 10px;
+    background: none;
+    color: gray;
+    border: 1px solid gray;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
 @media only screen and (max-width: 950px) {
     .search {
-        width: 100%;
+        width: 84%;
     }
 }
 
