@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="detailStyle.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- NAVBAR -->
     <header>
@@ -30,7 +32,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item" id="search-li">
                             <input type="text" class="search" id="search" placeholder="Search"><button
-                            class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </li>
                     </ul>
                     <div class="mx-auto"></div>
@@ -55,12 +57,14 @@
     </header>
 
     <!-- Modal Login/Register -->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-login">
                 <div class="modal-body form-box form-login">
                     <form action="#">
-                        <span class="icon-close"><i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal" aria-label="Close"></i></span>
+                        <span class="icon-close"><i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal"
+                                aria-label="Close"></i></span>
                         <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
                         <div class="input-box">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
@@ -78,19 +82,22 @@
                         </div>
                         <button type="submit" class="btn-login">Login</button>
                         <div class="login-register">
-                            <p>Don't have an account? <a href="#" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Register</a></p>
+                            <p>Don't have an account? <a href="#" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Register</a></p>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-register">
                 <div class="modal-body form-box form-register">
                     <form action="#">
-                        <span class="icon-close"><i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal" aria-label="Close"></i></span>
+                        <span class="icon-close"><i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal"
+                                aria-label="Close"></i></span>
                         <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Registration</h1>
                         <div class="input-box">
                             <span class="icon"><i class="fa-solid fa-user"></i></span>
@@ -112,7 +119,8 @@
                         </div>
                         <button type="submit" class="btn-login">Register</button>
                         <div class="login-register">
-                            <p>Already have an account? <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Login</a></p>
+                            <p>Already have an account? <a href="#" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Login</a></p>
                         </div>
                     </form>
                 </div>
@@ -120,9 +128,68 @@
         </div>
     </div>
 
+    <main id="main">
+        <section id="movie-detail" class="container-fluid d-flex">
+            <div class="container d-flex movie-container">
+                <div class="movie-poster">
+                    <img id="poster" src="" alt="Movie poster">
+                </div>
+                <article class="movie-info">
+                    <h1 id="title"></h1>
+                    <div class="subtitle d-flex">
+                        <p id="release-date"></p>
+                        <p><i class="fa-solid fa-chevron-left icon-head"></i> <span id="genre"></span> <i class="fa-solid fa-chevron-right icon-head"></i></p>
+                    </div>
+                    <p id="tagline"></p>
+                    <h3>Overview</h3>
+                    <p id="sinopsis"></p>
+                    <p id="rate"></p>
+                </article>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="container d-flex trailer-container">
+                <h1><i class="fa-solid fa-minus icon-head"></i> TRAILER <i class="fa-solid fa-minus icon-head"></i></h1>
+                <div id="trailer"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social">
+            <a href="./404/404page.html"><i class="fab fa-instagram"></i></a>
+            <a href="./404/404page.html"><i class="fab fa-twitter"></i></a>
+            <a href="./404/404page.html"><i class="fab fa-github"></i></a>
+            <a href="./404/404page.html"><i class="fab fa-linkedin"></i></a>
+            <a href="./404/404page.html"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./404/404page.html">Services</a>
+            </li>
+            <li>
+                <a href="./404/404page.html">About</a>
+            </li>
+            <li>
+                <a href="./404/404page.html">Terms</a>
+            </li>
+            <li>
+                <a href="./404/404page.html">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">Marcos Tarifa © 2023</p>
+    </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script src="indexDetail.js"></script>
 </body>
+
 </html>
