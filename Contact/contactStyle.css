@@ -193,6 +193,12 @@ h2:after {
     background-color: #dd0655;
 }
 
+/* NETLIFY RECAPTCHA */
+
+form .netlify-recaptcha {
+    justify-content: center;
+}
+
 /* SEARCH SECTION */
 
 .container-search-main {
