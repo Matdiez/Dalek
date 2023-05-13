@@ -1,6 +1,6 @@
-import { API_KEY } from './api.js'
+const API_KEY = '9c6e8f700231cd9ee075f71cf45d96e7'
 
-export const searchMovies = async () => {
+const searchMovies = async () => {
     const search_input = document.getElementById('search-input').value
     const search_query = encodeURIComponent(search_input)
 
@@ -16,8 +16,8 @@ export const searchMovies = async () => {
             movie_container.classList.add('container')
 
             const movie_detail = document.createElement('a')
-            movie_detail.href = `./Detail/detailPage.html?id=${movie.id}`
-
+            movie_detail.href = `../Detail/detailPage.html?id=${movie.id}`
+            
             const movie_container_card = document.createElement('div')
             movie_container_card.classList.add('movie-card')
 
@@ -41,3 +41,5 @@ export const searchMovies = async () => {
         console.log(error)
     }
 }
+
+document.getElementById('search-btn').addEventListener('click', searchMovies);
