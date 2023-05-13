@@ -17,7 +17,7 @@ const searchMovies = async () => {
 
             const movie_detail = document.createElement('a')
             movie_detail.href = `../Detail/detailPage.html?id=${movie.id}`
-            
+
             const movie_container_card = document.createElement('div')
             movie_container_card.classList.add('movie-card')
 

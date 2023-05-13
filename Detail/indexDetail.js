@@ -28,7 +28,7 @@ const loadMovie = async () => {
         const trailerRes = await fetch(`https://api.themoviedb.org/3/movie/${movie_id}/videos?api_key=${API_KEY}`)
         const trailerData = await trailerRes.json()
         const trailers = trailerData.results.filter(trailer => trailer.type === 'Trailer')
-        
+
         if (trailers.length > 0) {
             const trailerContainer = document.getElementById('trailer')
             const trailerHtml = `
@@ -62,7 +62,7 @@ const searchMovies = async () => {
 
             const movie_detail = document.createElement('a')
             movie_detail.href = `./Detail/detailPage.html?id=${movie.id}`
-            
+
             const movie_container_card = document.createElement('div')
             movie_container_card.classList.add('movie-card')
 

@@ -117,7 +117,7 @@ input:focus {
     color: #ff0562;
 }
 
-.faq-accordion label{
+.faq-accordion label {
     display: block;
     padding: 1rem;
     font-size: 1.3rem;
@@ -155,7 +155,7 @@ input:focus {
     text-justify: inter-word;
 }
 
-.btn-accordion:checked ~ .faq-answer {
+.btn-accordion:checked~.faq-answer {
     padding: 1rem 1rem 0rem 1rem;
     max-height: 600px;
     color: white;
@@ -168,11 +168,11 @@ input:focus {
     display: none;
 }
 
-.btn-accordion:checked ~ label .fa-plus {
+.btn-accordion:checked~label .fa-plus {
     display: none;
 }
 
-.btn-accordion:checked ~ label .fa-minus {
+.btn-accordion:checked~label .fa-minus {
     display: block;
 }
 
@@ -461,7 +461,7 @@ footer {
     .nav-link-custom {
         margin-right: 0px;
     }
-    
+
     /** -- Services section -- **/
     .service-content {
         margin-top: 3rem;
@@ -472,8 +472,8 @@ footer {
         display: none;
         transition: 0.5s linear;
     }
-    
-    .btn-show{
+
+    .btn-show {
         cursor: pointer;
         font-size: 1.1rem;
         position: relative;
@@ -483,20 +483,20 @@ footer {
         color: white;
         border-radius: 50px;
     }
-    
+
     #check {
         display: none;
     }
-    
-    #check:checked ~ .content-about-text {
+
+    #check:checked~.content-about-text {
         display: block;
     }
-    
-    #check:checked ~ label {
+
+    #check:checked~label {
         visibility: hidden;
     }
-    
-    #check:checked ~ label:after {
+
+    #check:checked~label:after {
         content: 'Show less';
         display: block;
         visibility: visible;
