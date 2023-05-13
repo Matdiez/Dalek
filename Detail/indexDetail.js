@@ -8,6 +8,7 @@ const loadMovie = async () => {
         const data = await res.json()
         const poster_url = `https://image.tmdb.org/t/p/w500/${data.poster_path}`
         const title = data.title
+        document.title = `${title}`
         const sinopsis = data.overview
         const release_date = new Date(data.release_date).toLocaleDateString()
         const rate = data.vote_average.toFixed(1)
