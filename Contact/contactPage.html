@@ -58,7 +58,7 @@
                 <div class="left-box"></div>
                 <div class="right-box">
                     <h2>Contact Us</h2>
-                    <form id="form">
+                    <form name="formulario-contacto-dalek" id="form" netlify data-netlify-recaptcha="true">
                         <input type="name" name="from_name" class="field" id="from_name" placeholder="Name"
                             pattern="[a-z A-Z]+" minlength="3" maxlength="30" required>
                         <input type="email" name="email_id" class="field" id="email_id" placeholder="E-mail" required>
@@ -66,6 +66,7 @@
                             pattern="[a-z A-Z]+" minlength="3" maxlength="20" required>
                         <textarea name="message" class="field message-area" id="message" placeholder="Message"
                             maxlength="250" required></textarea>
+                        <div data-netlify-recaptcha="true"></div>
                         <button type="submit" class="btn-send" id="button">Submit</button>
                     </form>
                 </div>
