@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -15,6 +16,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* -- NAVBAR -- */
