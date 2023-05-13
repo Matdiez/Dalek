@@ -195,7 +195,9 @@ h2:after {
 
 /* NETLIFY RECAPTCHA */
 
-form .netlify-recaptcha {
+.netlify-recaptcha {
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
